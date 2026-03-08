@@ -10,9 +10,7 @@ public class ADO2 {
         System.out.println("Insira o ano: ");
         int ano = leia.nextInt();
 
-        if((ano % 4 == 0) && (ano % 100 != 0)){
-            System.out.println("\nEste ano é bissexto!");
-        }else if((ano % 100 == 0) && (ano % 400 == 0)){
+        if(((ano % 4 == 0) && (ano % 100 != 0)) || ((ano % 100 == 0) && (ano % 400 == 0))){
             System.out.println("\nEste ano é bissexto!");
         }else{
             System.out.println("\nEste ano não é bissexto.");
